@@ -84,14 +84,14 @@ WSGI_APPLICATION = 'ConferenceReservationSystem.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'JulaneHotel',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': '127.0.0.1',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'it342-julanehotel',
+        'USER': 'faith',
+        'PASSWORD': 'Necesario0214#',
+        'HOST': 'it342-julanehotel.postgres.database.azure.com',
         'PORT': '3306',
         'OPTIONS':{
-        'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+        'init_command': {"sslmode": "required"},
         }
     }
 }
