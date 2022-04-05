@@ -40,9 +40,9 @@ def login_page(request):
     return render(request, 'authentication/login.html', context={'form': form})
  
 def login(request):
-    con = mysql.connector.connect(host="localhost",user="root",passwd="", database="julanehotel")
+    con = mysql.connector.connect(host="it342-julanehotel.postgres.database.azure.com",user="faith",passwd="Necesario0214#", database="it342-julanehotel")
     cursor=con.cursor()
-    con2 = mysql.connector.connect(host="localhost",user="root",passwd="", database="julanehotel")
+    con2 = mysql.connector.connect(host="it342-julanehotel.postgres.database.azure.com",user="faith",passwd="Necesario0214#", database="it342-julanehotel")
     cursor2=con2.cursor()
     sqlcommand="SELECT username from julanehotel_customer"
     sqlcommand2="SELECT password from julanehotel_customer"
@@ -115,9 +115,9 @@ def MyCustomerRegistration(request):
     return render(request,'customerRegistration.html')
 
 def MyadminLogInView(request):
-    con = mysql.connector.connect(host="localhost",user="root",passwd="", database="julanehotel")
+    con = mysql.connector.connect(host="it342-julanehotel.postgres.database.azure.com",user="faith",passwd="Necesario0214#", database="it342-julanehotel")
     cursor=con.cursor()
-    con2 = mysql.connector.connect(host="localhost",user="root",passwd="", database="julanehotel")
+    con2 = mysql.connector.connect(host="it342-julanehotel.postgres.database.azure.com",user="faith",passwd="Necesario0214#", database="it342-julanehotel")
     cursor2=con2.cursor()
     sqlcommand="SELECT username from julanehotel_admin"
     sqlcommand2="SELECT password from julanehotel_admin"
